@@ -7,8 +7,13 @@ const Hero = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   const handleDownload = (platform: 'ios' | 'android') => {
-    // Redirect to the provided link for both platforms
-    window.open('https://bolt.new/~/sb1-i4r2fbym', '_blank');
+    if (platform === 'android') {
+      // Use the provided Google Drive link for Android
+      window.open('https://drive.google.com/file/d/1Ldk7enhLb8vy6KyAMJ-ENayOhP8Uas9P/view?usp=drive_link', '_blank');
+    } else {
+      // Use the same link for iOS for now
+      window.open('https://drive.google.com/file/d/1Ldk7enhLb8vy6KyAMJ-ENayOhP8Uas9P/view?usp=drive_link', '_blank');
+    }
   };
 
   return (

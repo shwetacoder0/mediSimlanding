@@ -102,8 +102,8 @@ const Pricing = () => {
   const handlePlanAction = (plan: typeof plans[0]) => {
     switch (plan.action) {
       case 'app':
-        // Redirect to the app for both free trial and pro
-        window.open('https://bolt.new/~/sb1-i4r2fbym');
+        // Use the Google Drive link for both free trial and pro
+        window.open('https://drive.google.com/file/d/1Ldk7enhLb8vy6KyAMJ-ENayOhP8Uas9P/view?usp=drive_link', '_blank');
         break;
       case 'mailto':
         window.location.href = 'mailto:shwetacoder90@gmail.com?subject=MediSim Institution Plan Inquiry&body=Hi, I am interested in the MediSim Institution plan for our organization. Please provide more details about pricing and implementation.';
