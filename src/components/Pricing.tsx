@@ -103,7 +103,7 @@ const Pricing = () => {
     switch (plan.action) {
       case 'app':
         // Redirect to the app for both free trial and pro
-        window.open('https://bolt.new/~/sb1-i4r2fbym', '_blank');
+        window.open('https://bolt.new/~/sb1-i4r2fbym');
         break;
       case 'mailto':
         window.location.href = 'mailto:shwetacoder90@gmail.com?subject=MediSim Institution Plan Inquiry&body=Hi, I am interested in the MediSim Institution plan for our organization. Please provide more details about pricing and implementation.';
