@@ -21,7 +21,7 @@ const Pricing = () => {
       ],
       cta: "Start Free Trial",
       popular: false,
-      action: "signup"
+      action: "app"
     },
     {
       name: "Pro",
@@ -43,7 +43,7 @@ const Pricing = () => {
       ],
       cta: "Get Pro",
       popular: true,
-      action: "payment"
+      action: "app"
     },
     {
       name: "Institution",
@@ -101,16 +101,12 @@ const Pricing = () => {
 
   const handlePlanAction = (plan: typeof plans[0]) => {
     switch (plan.action) {
-      case 'signup':
-        // Handle free trial signup - you can integrate with your auth modal
-        console.log('Start free trial');
-        break;
-      case 'payment':
-        // Handle Pro payment - integrate with RevenueCat later
-        console.log('Upgrade to Pro');
+      case 'app':
+        // Redirect to the app for both free trial and pro
+        window.open('https://bolt.new/~/sb1-i4r2fbym', '_blank');
         break;
       case 'mailto':
-        window.location.href = 'mailto:sharma1935piyush@gmail.com?subject=MediSim Institution Plan Inquiry&body=Hi, I am interested in the MediSim Institution plan for our organization. Please provide more details about pricing and implementation.';
+        window.location.href = 'mailto:shwetacoder90@gmail.com?subject=MediSim Institution Plan Inquiry&body=Hi, I am interested in the MediSim Institution plan for our organization. Please provide more details about pricing and implementation.';
         break;
     }
   };

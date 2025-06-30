@@ -48,8 +48,8 @@ const Footer = () => {
             <ul className="space-y-4 text-gray-400">
               <li className="flex items-center">
                 <Mail className="h-4 w-4 mr-3" />
-                <a href="mailto:hello@medisim.app" className="hover:text-white transition-colors">
-                  hello@medisim.app
+                <a href="mailto:shwetacoder90@gmail.com" className="hover:text-white transition-colors">
+                  shwetacoder90@gmail.com
                 </a>
               </li>
             </ul>

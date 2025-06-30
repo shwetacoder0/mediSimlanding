@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Smartphone, User } from 'lucide-react';
+import { Menu, X, Smartphone, User, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 import VideoModal from './VideoModal';
 import AuthModal from './AuthModal';
@@ -40,10 +40,28 @@ const Header = () => {
 
   return (
     <>
+      {/* Bolt Logo at top */}
+      <div className="fixed top-4 left-4 z-50">
+        <motion.a
+          href="https://bolt.new"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="block"
+        >
+          <img
+            src="/images/holt.png"
+            alt="Bolt"
+            className="w-12 h-12 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200"
+          />
+        </motion.a>
+      </div>
+
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled 
             ? 'bg-black/20 backdrop-blur-xl border-b border-white/10' 
             : 'bg-transparent'
@@ -51,7 +69,7 @@ const Header = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 ml-16">
               <div className="bg-gradient-to-r from-blue-500 to-cyan-400 p-2 rounded-xl">
                 <Smartphone className="h-6 w-6 text-white" />
               </div>
@@ -74,6 +92,14 @@ const Header = () => {
               >
                 Watch Demo
               </motion.button>
+              
+              <a 
+                href="mailto:shwetacoder90@gmail.com" 
+                className="flex items-center text-gray-300 hover:text-white transition-colors font-medium"
+              >
+                <Mail className="h-4 w-4 mr-2" />
+                Contact
+              </a>
               
               {user ? (
                 <div className="flex items-center space-x-4">
@@ -129,6 +155,14 @@ const Header = () => {
               >
                 Watch Demo
               </button>
+              
+              <a 
+                href="mailto:shwetacoder90@gmail.com" 
+                className="flex items-center text-gray-300 hover:text-white font-medium"
+              >
+                <Mail className="h-4 w-4 mr-2" />
+                Contact
+              </a>
               
               {user ? (
                 <div className="space-y-2">
