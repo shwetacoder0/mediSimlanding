@@ -15,7 +15,7 @@ const Sponsors = () => {
     },
     {
       name: 'ElevenLabs',
-      logo: '/images/elevenlabs.png',
+      logo: '/images/elevenlabs.svg',
       url: 'https://elevenlabs.io'
     },
     {
