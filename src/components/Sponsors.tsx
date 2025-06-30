@@ -26,13 +26,13 @@ const Sponsors = () => {
   ];
 
   return (
-    <section className="py-8 bg-black/50 border-b border-white/10">
+    <section className="pt-20 pb-8 bg-black/50 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-8 flex flex-row"
+          className="text-center mb-6"
         >
           <p className="text-gray-400 font-medium text-sm">Thanks to our amazing sponsors</p>
         </motion.div>
@@ -42,7 +42,7 @@ const Sponsors = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ staggerChildren: 0.1 }}
-          className="flex flex-wrap justify-center items-center gap-8 md:gap-12"
+          className="flex flex-wrap justify-center items-center gap-6 md:gap-8"
         >
           {sponsors.map((sponsor, index) => (
             <motion.a
@@ -54,14 +54,14 @@ const Sponsors = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.1, y: -5 }}
+              whileHover={{ scale: 1.05, y: -2 }}
               className="group"
             >
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-white/10">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-3 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-white/10">
                 <img
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="h-8 w-auto max-w-[120px] object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300"
+                  className="h-6 w-auto max-w-[100px] object-contain filter brightness-90 group-hover:brightness-100 transition-all duration-300"
                 />
               </div>
             </motion.a>
