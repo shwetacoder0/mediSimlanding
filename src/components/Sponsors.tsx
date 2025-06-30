@@ -32,7 +32,7 @@ const Sponsors = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-8"
+          className="text-center mb-8 flex flex-row"
         >
           <p className="text-gray-400 font-medium text-sm">Thanks to our amazing sponsors</p>
         </motion.div>
