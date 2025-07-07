@@ -11,7 +11,7 @@ interface VideoModalProps {
 const VideoModal: React.FC<VideoModalProps> = ({ 
   isOpen, 
   onClose, 
-  videoId = "dQw4w9WgXcQ" // Default to a sample video, you can change this
+  videoId = "0Z7XOlJu27Q" // MediSim Demo Video
 }) => {
   return (
     <AnimatePresence>
